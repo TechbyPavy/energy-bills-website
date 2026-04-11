@@ -1,0 +1,259 @@
+body {
+    background: radial-gradient(
+        ellipse at top left,
+        #2b5f44 0%,
+        #0f2018 30%,
+        #0a1510 60%,
+        #060e0a 100%
+    );
+    min-height: 100vh;
+
+    padding-top: 100px; /* ajusta para a altura real do teu header */
+}
+
+
+
+header{
+    position: fixed;       /* fica sempre no topo ao fazer scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 40px;
+    background: rgba(10, 21, 16, 0.85);
+    backdrop-filter: blur(18px);  /* efeito de vidro fosco */
+    
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between; /* logo á esquerda, links à direita */
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 30px; /* aumenta o texto */
+}
+
+
+main {
+    padding-top: 140px;   /* tem de ser igual ou maior à altura do teu header */
+}
+
+.centro-botao{
+    text-align: center;
+}
+
+.seccao-features ul{
+    text-align: left;
+}
+
+.seccao-features{
+    padding: 60px 20px;
+}
+
+img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.logo{
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #E8F0ED;
+    text-decoration: none;
+}
+
+.marca{
+    width: 120px;
+    height: auto;
+}
+
+a{
+    color: rgb(164, 198, 171);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.foto1{
+    width: 300px;
+    height: auto;
+}
+
+.foto2{
+    width: 300px;
+    height: 200px;
+}
+
+.foto3{
+    width: 300px;
+    height: 200px;
+}
+
+.foto4{
+    width: 300px;
+    height: 200px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul a {
+    color: #7A9B8E;
+    text-decoration: none;
+    font-size: 1.5;
+    font-weight: 500;
+}
+
+nav ul a:hover {
+    color: #E8F0ED;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(225, 232, 225)
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(215, 229, 209)
+}
+
+.verde{
+    color:#62cf97;
+    text-decoration: underline rgb(164, 227, 102);
+}
+
+h3{
+    color: rgba(112, 174, 124, 0.765);
+}
+
+li{
+    font-family: 'Times New Roman', Times, serif;
+    color:  rgb(164, 198, 171);
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.seccao-fontes {
+    padding: 60px 20px;
+}
+
+.seccao-fontes ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+.label{
+    color: rgb(225, 232, 225);
+}
+
+input[type="file"] {
+    color: white;
+}
+
+/* para o botão "Escolher Ficheiro" */
+input[type="file"]::file-selector-button {
+    background-color: #00C896;
+    color: #0B0F0E;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type="button"]::file-selector-button:hover {
+    background-color: #00A57C;
+}
+
+
+
+/* ── TABLET ── */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        padding: 16px 24px;
+    }
+
+    nav ul {
+        gap: 1rem;   /* menos espaço entre links */
+    }
+
+    nav ul a {
+        font-size: 0.8rem;   /* letra um pouco menor */
+    }
+}
+
+
+
+/* ── TELEMÓVEL ── */
+@media (max-width: 768px) {
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    nav ul a {
+        font-size: 0.75rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    #botao-principal {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+}
+
+/* ── TELEMÓVEL PEQUENO ── */
+@media (max-width: 320px) {
+
+    nav ul {
+        display: none;   /* só esconde em ecrãs muito pequenos */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+}

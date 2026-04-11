@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload da Fatura - Energy Bills</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- IMAGEM: logo da app (ex: logo.png)   -->
+            <a href="index.html">Home</a>
+            <a href="upload.html">Analisar Fatura</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao-upload"> <!-- Secção principal onde fica o formulário de upload -->
+
+            <h2>Analisar a minha fatura</h2> <!-- Título da secção -->
+            <p>Carrega a tua fatura em PDF ou foto e nós tratamos do resto.</p> <!-- Texto explicativo -->
+
+            <form id="formulario"> <!-- Formulário que contém os campos de entrada -->
+
+                <div class="campo"> <!-- Campo individual do formulário -->
+                    <label>Nome</label> <!-- Texto que identifica o campo -->
+                    <input type="text" id="nome" placeholder="O teu nome"> <!-- Campo de texto para o nome -->
+                </div>
+
+                <div class="campo">
+                    <label>Email</label> <!-- Texto que identifica o campo -->
+                    <input type="email" id="email" placeholder="O teu email">
+                    <!-- Campo de email com validação automática -->
+                </div>
+
+                <div class="campo">
+                    <label>Fatura (PDF ou foto)</label> <!-- Texto que identifica o campo -->
+                    <input type="file" id="input-fatura" accept=".pdf, image/*">
+                    <!-- Input para carregar ficheiros PDF ou imagens -->
+                </div>
+
+                <button type="button" id="botao-analisar">Analisar Fatura</button>
+                <!-- Botão que irá acionar a análise da fatura via JavaScript -->
+
+            </form>
+
+            <div id="resultado"></div> <!-- Área onde será mostrado o resultado da análise -->
+
+        </section>
+    </main>
+
+    <a href="index.html">← Voltar para a página inicial</a>
+
+    <footer>
+        <!-- IMAGEM: logo pequeno no rodapé (ex: logo.png) -->
+        <p>© 2026 Energy Bills. Feito em Portugal 🇵🇹</p>
+    </footer>
+
+    <script src="app.js"></script> <!-- ← adiciona aqui -->
+
+</body>
+
+</html>
