@@ -162,7 +162,7 @@ footer{
     color: white;
 }
 
-
+/* Estilos para a secção de upload */
 .label{
     color: rgb(225, 232, 225);
 }
@@ -182,9 +182,91 @@ input[type="file"]::file-selector-button {
     font-weight: 600;
 }
 
-input[type="button"]::file-selector-button:hover {
-    background-color: #00A57C;
+
+.secao-upload {
+    max-width: 500px; /* Limita a largura máxima da secção */
+    margin: 0 auto; /* Centraliza horizontalmente na página */
+    padding: 3rem 2rem; /* Espaçamento interno (topo/baixo e lados) */
+    text-align: center; /* Centraliza o texto dentro da secção */
 }
+
+.secao-upload h2 {
+    margin-bottom: 0.5rem; /* Espaço abaixo do título */
+}
+
+.secao-upload p {
+    margin-bottom: 2rem; /* Espaço abaixo do parágrafo introdutório */
+}
+
+/* Cada campo do formulário fica organizado em coluna */
+.campo {
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Coloca label e input em coluna */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 1.2rem; /* Espaço entre campos */
+}
+
+.campo label {
+    color: #E8F0ED; /* Cor do texto do label */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    margin-bottom: 0.4rem; /* Espaço entre o label e o input */
+}
+
+.campo input {
+    background: rgba(255,255,255,0.05); /* Fundo transparente suave */
+    border: 1px solid rgba(0,200,150,0.3); /* Borda com cor esverdeada */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 12px 16px; /* Espaçamento interno */
+    color: white; /* Cor do texto dentro do input */
+    font-size: 1rem; /* Tamanho da fonte */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+.campo input:focus {
+    border-color: #00C896; /* Muda a cor da borda ao focar */
+}
+
+input[type="file"] {
+    color: white; /* Cor do texto do input de ficheiro */
+    padding: 10px; /* Espaçamento interno */
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #00C896; /* Cor do botão de selecionar ficheiro */
+    color: #0B0F0E; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    padding: 8px 16px; /* Espaçamento interno */
+    border-radius: 20px; /* Botão arredondado */
+    cursor: pointer; /* Cursor de clique */
+    font-weight: 600; /* Texto mais forte */
+    margin-right: 12px; /* Espaço entre o botão e o nome do ficheiro */
+}
+
+#botao-analisar {
+    width: 100%; /* Botão ocupa toda a largura */
+    margin-top: 1rem; /* Espaço acima do botão */
+    background-color: #00C896; /* Cor de fundo */
+    color: #0B0F0E; /* Cor do texto */
+    border: none; /* Remove borda */
+    padding: 14px; /* Espaçamento interno */
+    border-radius: 100px; /* Botão bem arredondado */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: 700; /* Texto mais forte */
+    cursor: pointer; /* Cursor de clique */
+}
+
+#botao-analisar:hover {
+    background-color: #00A87D; /* Cor do botão ao passar o rato */
+}
+
+#resultado {
+    margin-top: 1.5rem; /* Espaço acima da área de resultados */
+    color: #E8F0ED; /* Cor do texto */
+    font-size: 0.95rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura das linhas para melhor leitura */
+}
+
 
 
 
