@@ -1,4 +1,4 @@
-# Energy Bills - Making Electricity Bills Esay to Understand
+# Energy Bills - Making Electricity Bills Easy to Understand
 
 Today, more than 70% of people in Portugal cannot understand their own electricty bill. This creates low energy literacy, worng decisions, and money wasted every month.
 
@@ -44,5 +44,5 @@ This is a fictional project, created only for learning and practicing HTML,CSS a
 
 ## 🌐 Languegue Note
 
-This project is written in **Portuguese**, beacuse it is desigened for Potuguese electricty consumers. The inetrface, examples and bill terminology follow the Portuguese context. 
+This project is written in **Portuguese**, beacuse it is desigened for Potuguese electricty consumers. The interface, examples and bill terminology follow the Portuguese context. 
 
