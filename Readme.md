@@ -39,8 +39,9 @@ Soon...
 This is a fictional project, created only for learning and practicing HTML,CSS and Java Script.
 
 - Concept inspired by real energy literacy challenges in Portugal
-- Interface and development created bt me
+- Interface and development created by me
 - Pixaby : font images
+- LOGO from Google Images
 
 ## 🌐 Languegue Note
 
